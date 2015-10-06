@@ -25,7 +25,11 @@ cc($('<a>'), {
 ```
 ### Underscore
 ```js
-var stooges = [{name: 'curly', age: 25}, {name: 'moe', age: 21}, {name: 'larry', age: 23}]
+var stooges = [
+  {name: 'curly', age: 25},
+  {name: 'moe', age: 21},
+  {name: 'larry', age: 23}
+]
 //original chain
 _.chain(stooges).
   sortBy(function(stooge) {return stooge.age}).
