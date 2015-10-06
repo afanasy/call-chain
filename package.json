@@ -1,0 +1,26 @@
+{
+  "name": "call-chain",
+  "version": "1.0.0",
+  "description": "Method chain as an object",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afanasy/call-chain.git"
+  },
+  "author": "Afanasy Kurakin <afanasy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afanasy/call-chain/issues"
+  },
+  "homepage": "https://github.com/afanasy/call-chain",
+  "dependencies": {
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "underscore": "*",
+    "mocha": "*",
+    "expect.js": "*"
+  }
+}
