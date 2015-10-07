@@ -1,6 +1,6 @@
 {
   "name": "call-chain",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Method chain as an object",
   "scripts": {
     "test": "./node_modules/.bin/mocha"
@@ -16,10 +16,10 @@
   },
   "homepage": "https://github.com/afanasy/call-chain",
   "dependencies": {
-    "underscore": "*"
+    "underscore": "1.8.3"
   },
   "devDependencies": {
-    "mocha": "*",
-    "expect.js": "*"
+    "mocha": "2.3.3",
+    "expect.js": "0.3.1"
   }
 }
