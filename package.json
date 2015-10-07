@@ -1,6 +1,6 @@
 {
   "name": "call-chain",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Method chain as an object",
   "scripts": {
     "test": "./node_modules/.bin/mocha"
@@ -19,7 +19,6 @@
     "underscore": "*"
   },
   "devDependencies": {
-    "underscore": "*",
     "mocha": "*",
     "expect.js": "*"
   }
