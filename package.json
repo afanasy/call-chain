@@ -16,10 +16,12 @@
   },
   "homepage": "https://github.com/afanasy/call-chain",
   "dependencies": {
-    "underscore": "1.8.3"
+    "lodash.foreach": "^4.3.0",
+    "lodash.isfunction": "^3.0.8"
   },
   "devDependencies": {
+    "expect.js": "0.3.1",
     "mocha": "2.3.3",
-    "expect.js": "0.3.1"
+    "underscore": "^1.8.3"
   }
 }
