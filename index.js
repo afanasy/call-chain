@@ -1,9 +1,10 @@
-var _ = require('underscore')
+var forEach = require('lodash.foreach')
+var isFunction = require('lodash.isfunction')
 
 module.exports = function (d, data) {
   var r = d
-  _.each(data, function (value, key) {
-    if (_.isFunction(d[key]))
+  forEach(data, function (value, key) {
+    if (isFunction(d[key]))
       r = r[key](value)
   })
   return r
