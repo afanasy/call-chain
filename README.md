@@ -32,16 +32,16 @@ var stooges = [
 ]
 //original chain
 _.chain(stooges).
-  sortBy(function(stooge) {return stooge.age}).
-  map(function(stooge) {return stooge.name + ' is ' + stooge.age}).
+  sortBy(stooge, 'age').
+  map(stooge => stooge.name + ' is ' + stooge.age).
   first().
   value()
 //using cc
 cc(_.chain(stooges), {
-  sortBy: function(stooge) {return stooge.age},
-  map: function(stooge) {return stooge.name + ' is ' + stooge.age},
-  first: null,
-  value: null
+  sortBy: 'age',
+  map: stooge => stooge.name + ' is ' + stooge.age,
+  first: undefined,
+  value: undefined
 })
 ```
 ### Moment

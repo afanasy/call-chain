@@ -1,11 +1,7 @@
-var forEach = require('lodash.foreach')
-var isFunction = require('lodash.isfunction')
-
 module.exports = function (d, data) {
   var r = d
-  forEach(data, function (value, key) {
-    if (isFunction(d[key]))
-      r = r[key](value)
-  })
+  for (key in data)
+    if (typeof d[key] == 'function')
+      r = r[key](data[key])
   return r
 }
